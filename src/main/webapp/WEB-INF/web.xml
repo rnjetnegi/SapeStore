@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>SapeStore</display-name>
+	<servlet>
+		<servlet-name>SapeStore</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<context-param>
+		<param-name>log4jExposeWebAppRoot</param-name>
+		<param-value>false</param-value>
+	</context-param>
+	<context-param>
+		<param-name>webAppRootKey</param-name>
+		<param-value>FinanceManager.root</param-value>
+	</context-param>
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>WEB-INF/SapeStore-servlet.xml</param-value>
+	</context-param>
+	<servlet-mapping>
+		<servlet-name>SapeStore</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+	<session-config>
+		<session-timeout>15</session-timeout>
+	</session-config>
+	<security-constraint>
+		<display-name>Prevent access to raw pages.</display-name>
+		<web-resource-collection>
+			<web-resource-name>Raw Pages</web-resource-name>
+			<url-pattern>/SuccessfulRegistration.jsp</url-pattern>
+			<url-pattern>/addBooks.jsp</url-pattern>
+			<url-pattern>/AdminHome.jsp</url-pattern>
+			<url-pattern>/book.jsp</url-pattern>
+			<url-pattern>/BookDetail.jsp</url-pattern>
+			<url-pattern>/BookDetailInclude.jsp</url-pattern>
+			<url-pattern>/BookReviews.jsp</url-pattern>
+			<url-pattern>/BooksPurchased.jsp</url-pattern>
+			<url-pattern>/BooksRented.jsp</url-pattern>
+			<url-pattern>/CheckBeforeRegistration.jsp</url-pattern>
+			<url-pattern>/Comments.jsp</url-pattern>
+			<url-pattern>/confirmShippingAddress.jsp</url-pattern>
+			<url-pattern>/ContactUsAdmin.jsp</url-pattern>
+			<url-pattern>/ContactUsCustomer.jsp</url-pattern>
+			<url-pattern>/DefaultReport.jsp</url-pattern>
+			<url-pattern>/DispatchResult.jsp</url-pattern>
+			<url-pattern>/DisplayShoppingCart.jsp</url-pattern>
+			<url-pattern>/EditProfile.jsp</url-pattern>
+			<url-pattern>/EditResult.jsp</url-pattern>
+			<url-pattern>/error.jsp</url-pattern>
+			<url-pattern>/errorPage.jsp</url-pattern>
+			<url-pattern>/footer.jsp</url-pattern>
+			<url-pattern>/header.jsp</url-pattern>
+			<url-pattern>/index.jsp</url-pattern>
+			<url-pattern>/Logout.jsp</url-pattern>
+			<url-pattern>/ManageInventory.jsp</url-pattern>
+			<url-pattern>/ManageOrders.jsp</url-pattern>
+			<url-pattern>/managePages.jsp</url-pattern>
+			<url-pattern>/NewFile.jsp</url-pattern>
+			<url-pattern>/OrderConfirmation.jsp</url-pattern>
+			<url-pattern>/PolicyAdmin.jsp</url-pattern>
+			<url-pattern>/PolicyCustomers.jsp</url-pattern>
+			<url-pattern>/Profile.jsp</url-pattern>
+			<url-pattern>/PurchasedRentedReport.jsp</url-pattern>
+			<url-pattern>/register.jsp</url-pattern>
+			<url-pattern>/RentedOrders.jsp</url-pattern>
+			<url-pattern>/scripts/*</url-pattern>
+			<url-pattern>/searchBook.jsp</url-pattern>
+			<url-pattern>/searchResult.jsp</url-pattern>
+			<url-pattern>/ShippingAddress.jsp</url-pattern>
+			<url-pattern>/Transaction.jsp</url-pattern>
+			<url-pattern>/UpdatedProfile.jsp</url-pattern>
+			<url-pattern>/ValidateProfile.jsp</url-pattern>
+			<url-pattern>/WriteReview.jsp</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<description>No roles, so no direct access</description>
+		</auth-constraint>
+	</security-constraint>
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/404.jsp</location>
+	</error-page>
+</web-app>

@@ -1,0 +1,121 @@
+@CHARSET "ISO-8859-1";
+
+#mainContent{
+	background: #f5f5f5;
+}
+#mainContent h2{
+	padding-left:30px;
+}
+#registration {
+	padding-bottom: 30px;
+	padding-left: 30px;
+}
+#registration tr{
+	height: 25px;
+}
+#registration td{
+	width: 190px;
+}
+#registration td input{
+	width: 250px;
+}
+#registration td select{
+	width: 250px;
+}
+.regFormTitle{
+	font-size: 22px;
+	font-family: 'Sapient Centro Slab';
+	font-weight: normal;
+	color: #040707;
+}
+.regFormLbl{
+	font-size: 15px;
+	font-family: 'SapientSansMedium';
+	font-weight: normal;
+	color: #1d1d1d;
+}
+.regBtn {
+	font-size: 22px;
+	font-family: 'Sapient Centro Slab';
+	font-weight: bold;
+	color: #ffffff;
+	background: #21addd;
+}
+#nameErrorMessage{
+	font-size: 12px;
+	font-family: 'SapientSansLight';
+	font-weight: normal;
+	color: #1d1d1d;
+}
+#loginNameErrorMessage{
+	font-size: 12px;
+	font-family: 'SapientSansLight';
+	font-weight: normal;
+	color: #1d1d1d;
+}
+#passwordErrorMessage{
+	font-size: 12px;
+	font-family: 'SapientSansLight';
+	font-weight: normal;
+	color: #1d1d1d;
+}
+.passwordErrorMessage{
+	font-size: 12px;
+	font-family: 'SapientSansLight';
+	font-weight: normal;
+	color: #1d1d1d;
+}
+#cnfPasswordErrorMessage{
+	font-size: 12px;
+	font-family: 'SapientSansLight';
+	font-weight: normal;
+	color: #1d1d1d;
+}
+#emailErrorMessage{
+	font-size: 12px;
+	font-family: 'SapientSansLight';
+	font-weight: normal;
+	color: #1d1d1d;
+}
+#addr1ErrorMessage{
+	font-size: 12px;
+	font-family: 'SapientSansLight';
+	font-weight: normal;
+	color: #1d1d1d;
+}
+#addr2ErrorMessage{
+	font-size: 12px;
+	font-family: 'SapientSansLight';
+	font-weight: normal;
+	color: #1d1d1d;
+}
+#cityErrorMessage{
+	font-size: 12px;
+	font-family: 'SapientSansLight';
+	font-weight: normal;
+	color: #1d1d1d;
+}
+#stateErrorMessage{
+	font-size: 12px;
+	font-family: 'SapientSansLight';
+	font-weight: normal;
+	color: #1d1d1d;
+}
+#zipErrorMessage{
+	font-size: 12px;
+	font-family: 'SapientSansLight';
+	font-weight: normal;
+	color: #1d1d1d;
+}
+#phoneErrorMessage{
+	font-size: 12px;
+	font-family: 'SapientSansLight';
+	font-weight: normal;
+	color: #1d1d1d;
+}
+#mobileErrorMessage{
+	font-size: 12px;
+	font-family: 'SapientSansLight';
+	font-weight: normal;
+	color: #1d1d1d;
+}

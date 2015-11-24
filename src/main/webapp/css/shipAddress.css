@@ -1,0 +1,52 @@
+@CHARSET "ISO-8859-1";
+
+fieldset {
+       width: 600px;
+}
+
+legend {
+       font-size: 20px;
+}
+
+label.field {
+       text-align: left;
+       width: 170px;
+       float: left;
+       font-weight: bold;
+       padding: 0px 10px 0px 0px;
+}
+
+input.formtext,select.formtext {
+       width: 300px;
+       float: left;
+}
+
+input.radioaddress {
+       font-size: 20px;
+}
+
+input.submit {
+	float: right;
+	display: block;
+	font: 20px sans-serif;
+    text-decoration: none;
+    border: 1px solid #21addd;
+    border-color: #21addd;	
+    background-color: #21addd;
+	color: #ffffff;
+}
+
+div.btnpad {
+       padding: 20px 112px 0px 0px;
+}
+
+fieldset p {
+       clear: both;
+       padding: 5px;
+}
+
+div.error {
+       width: 300px;
+       float: left;
+       padding: 0px 0px 0px 185px;
+}
